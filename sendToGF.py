@@ -7,7 +7,7 @@ import os
 import random
 
 city = os.getenv('CITY_GF')
-user_ids = os.getenv('USER_ID_GF').split("\n")
+user_ids = os.getenv('USER_ID_GF').split(' ')
 template_id = os.getenv('TEMPLATE_ID_GF')
 
 
