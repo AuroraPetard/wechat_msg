@@ -1,0 +1,30 @@
+name: weather
+on:
+  schedule:
+  - cron:  '30 11 * * *'
+  workflow_dispatch:
+
+jobs:
+  send_message:
+    runs-on: ubuntu-latest
+    name: send morning to your girlfriend
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3
+      with:
+        ref: master
+
+    - name: sender
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+    - run: pip install -r ./requirements.txt && python ./weatherForecast.py
+
+    env:
+      APP_ID: ${{ secrets.APP_ID }}
+      APP_SECRET: ${{ secrets.APP_SECRET }}
+      TEMPLATE_ID_WF: ${{ secrets.TEMPLATE_ID_WF }}
+      USER_ID_WF: ${{ secrets.USER_ID_WF }}
+      CITY_WF: ${{ secrets.CITY_WF }}
