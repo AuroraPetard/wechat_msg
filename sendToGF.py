@@ -22,7 +22,7 @@ if app_id is None or app_secret is None:
   exit(422)
 
 if not user_ids:
-  print('请设置 USER_ID，若存在多个 ID 用空格分开')
+  print('请设置 USER_ID，若存在多个 ID 每行一个ID')
   exit(422)
 
 if template_id is None:
@@ -126,7 +126,7 @@ data = {
 if __name__ == '__main__':
   count = 0
   try:
-    for user_id in user_ids:
+    for user_id in user_ids[0],user_ids[1]:
       res = wm.send_template(user_id, template_id, data)
       count+=1
   except WeChatClientException as e:
