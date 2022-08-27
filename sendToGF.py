@@ -6,16 +6,23 @@ import requests
 import os
 import random
 
+city = os.getenv('CITY_GF')
+user_ids = os.getenv('USER_ID_GF').split("\n")
+template_id = os.getenv('TEMPLATE_ID_GF')
+
 today = datetime.now() + timedelta(hours=8)
+
+
+
 start_date = os.getenv('START_DATE')
-city = os.getenv('CITY')
+
+
 birthday = os.getenv('BIRTHDAY')
 
 app_id = os.getenv('APP_ID')
 app_secret = os.getenv('APP_SECRET')
 
-user_ids = os.getenv('USER_ID', '').split("\n")
-template_id = os.getenv('TEMPLATE_ID')
+
 
 if app_id is None or app_secret is None:
   print('请设置 APP_ID 和 APP_SECRET')
@@ -126,7 +133,7 @@ data = {
 if __name__ == '__main__':
   count = 0
   try:
-    for user_id in user_ids[0],user_ids[1]:
+    for user_id in user_ids:
       res = wm.send_template(user_id, template_id, data)
       count+=1
   except WeChatClientException as e:
