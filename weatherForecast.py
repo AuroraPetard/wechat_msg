@@ -3,9 +3,10 @@ import requests
 import os
 import random
 from zhdate import ZhDate
+from datetime import datetime
 
 
-os.environ["CITY"] = "北京\n单县"
+os.environ["CITY"] = "北京\n天津"
 
 citys = os.getenv('CITY').split("\n")
 
@@ -21,19 +22,20 @@ def get_weather(city):
   return weather
 
 
-week_list = ["星期一","星期二","星期三","星期四","星期五","星期六","星期日"]
 
+week_list = ["星期一","星期二","星期三","星期四","星期五","星期六","星期日"]
 def get_week(dateTime):
 	import datetime
 	week = datetime.datetime.strptime(dateTime, "%Y-%m-%d").weekday()
 	return week_list[week]
 
 
+
 def get_lunar(dateTime):
-	from datetime import datetime
 	dataArr=dateTime.split("-")
 	year,month,day=int(dataArr[0]),int(dataArr[1]),int(dataArr[2])
 	return ZhDate.from_datetime(datetime(year, month,day))
+
 
 # 随机颜色
 def get_random_color():
