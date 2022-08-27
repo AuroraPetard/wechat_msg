@@ -49,3 +49,29 @@
 {{ d3_words.DATA }}
 
 
+{{d1c.DATA }}市未来三天天气
+
+***
+明天: {{d1d.DATA }} {{d1w.DATA }}  {{d1l.DATA }}
+天气: {{d1wa.DATA }}
+最低温: {{d1lo.DATA }}  最高温: {{d1h.DATA }}
+风向: {{d1wi.DATA }}  风力: {{d1wl.DATA }}级
+空气质量: {{d1aq.DATA }}
+{{d1wo.DATA }}
+
+***
+后天: {{d2d.DATA }} {{d2w.DATA }}  {{d2l.DATA }}
+天气: {{d2wa.DATA }}
+最低温: {{d2lo.DATA }}  最高温: {{d2h.DATA }}
+风向: {{d2wi.DATA }}  风力: {{d2wl.DATA }}级
+空气质量: {{d2aq.DATA }}
+{{d2wo.DATA }}
+
+***
+大后天: {{d3d.DATA }} {{d3w.DATA }}  {{d3l.DATA }}
+天气: {{d3wa.DATA }}
+最低温: {{d3lo.DATA }}  最高温: {{d3h.DATA }}
+风向: {{d3wi.DATA }}  风力: {{d3wl.DATA }}级
+空气质量: {{d3aq.DATA }}
+{{d3wo.DATA}}
+

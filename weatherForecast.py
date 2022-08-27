@@ -54,7 +54,8 @@ def get_week(dateTime):
 def get_lunar(dateTime):
     dataArr = dateTime.split("-")
     year, month, day = int(dataArr[0]), int(dataArr[1]), int(dataArr[2])
-    return ZhDate.from_datetime(datetime(year, month, day))
+    lunar=ZhDate.from_datetime(datetime(year, month, day))
+    return str(lunar)
 
 
 # 随机颜色
