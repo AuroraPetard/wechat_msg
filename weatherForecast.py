@@ -84,127 +84,127 @@ if __name__ == '__main__':
         d3 = weatherAll[3]
 
         data = {
-            "d1_city": {
+            "d1c": {
                 "value": d1['city'],
                 "color": get_random_color()
             },
-            "d1_date": {
+            "d1d": {
                 "value": d1['date'],
                 "color": get_random_color()
             },
-            "week_d1_date": {
+            "d1w": {
                 "value": get_week(d1['date']),
                 "color": get_random_color()
             },
-            "lunar_d1_date": {
+            "d1l": {
                 "value": get_lunar(d1['date']),
                 "color": get_random_color()
             },
-            "d1_weather": {
+            "d1wa": {
                 "value": d1['weather'],
                 "color": get_random_color()
             },
-            "d1_low": {
+            "d1lo": {
                 "value": math.floor(d1['low']),
                 "color": get_random_color()
             },
-            "d1_high": {
+            "d1h": {
                 "value": math.floor(d1['high']),
                 "color": get_random_color()
             },
-            "d1_wind": {
+            "d1wi": {
                 "value": d1['wind'],
                 "color": get_random_color()
             },
-            "d1_windLevel": {
+            "d1wl": {
                 "value": d1['windLevel'],
                 "color": get_random_color()
             },
-            "d1_airQuality": {
+            "d1aq": {
                 "value": d1['airQuality'],
                 "color": get_random_color()
             },
-            "d1_words": {
+            "d1wo": {
                 "value": get_words(),
                 "color": get_random_color()
             },
-            "d2_date": {
+            "d2d": {
                 "value": d2['date'],
                 "color": get_random_color()
             },
-            "week_d2_date": {
+            "d2w": {
                 "value": get_week(d2['date']),
                 "color": get_random_color()
             },
-            "lunar_d2_date": {
+            "d2l": {
                 "value": get_lunar(d2['date']),
                 "color": get_random_color()
             },
-            "d2_weather": {
+            "d2wa": {
                 "value": d2['weather'],
                 "color": get_random_color()
             },
-            "d2_low": {
+            "d2lo": {
                 "value": math.floor(d2['low']),
                 "color": get_random_color()
             },
-            "d2_high": {
+            "d2h": {
                 "value": math.floor(d2['high']),
                 "color": get_random_color()
             },
-            "d2_wind": {
+            "d2wi": {
                 "value": d2['wind'],
                 "color": get_random_color()
             },
-            "d2_windLevel": {
+            "d2wl": {
                 "value": d2['windLevel'],
                 "color": get_random_color()
             },
-            "d2_airQuality": {
+            "d2aq": {
                 "value": d2['airQuality'],
                 "color": get_random_color()
             },
-            "d2_words": {
+            "d2wo": {
                 "value": get_words(),
                 "color": get_random_color()
             },
-            "d3_date": {
+            "d3d": {
                 "value": d3['date'],
                 "color": get_random_color()
             },
-            "week_d3_date": {
+            "d3w": {
                 "value": get_week(d3['date']),
                 "color": get_random_color()
             },
-            "lunar_d3_date": {
+            "d3l": {
                 "value": get_lunar(d3['date']),
                 "color": get_random_color()
             },
-            "d3_weather": {
+            "d3wa": {
                 "value": d3['weather'],
                 "color": get_random_color()
             },
-            "d3_low": {
+            "d3lo": {
                 "value": math.floor(d3['low']),
                 "color": get_random_color()
             },
-            "d3_high": {
+            "d3h": {
                 "value": math.floor(d3['high']),
                 "color": get_random_color()
             },
-            "d3_wind": {
+            "d3wi": {
                 "value": d3['wind'],
                 "color": get_random_color()
             },
-            "d3_windLevel": {
+            "d3wl": {
                 "value": d3['windLevel'],
                 "color": get_random_color()
             },
-            "d3_airQuality": {
+            "d3aq": {
                 "value": d3['airQuality'],
                 "color": get_random_color()
             },
-            "d3_words": {
+            "d3wo": {
                 "value": get_words(),
                 "color": get_random_color()
             },

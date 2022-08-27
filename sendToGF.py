@@ -10,19 +10,15 @@ city = os.getenv('CITY_GF')
 user_ids = os.getenv('USER_ID_GF').split("\n")
 template_id = os.getenv('TEMPLATE_ID_GF')
 
-today = datetime.now() + timedelta(hours=8)
-
-
 
 start_date = os.getenv('START_DATE')
-
-
 birthday = os.getenv('BIRTHDAY')
 
 app_id = os.getenv('APP_ID')
 app_secret = os.getenv('APP_SECRET')
 
 
+today = datetime.now() + timedelta(hours=8)
 
 if app_id is None or app_secret is None:
   print('请设置 APP_ID 和 APP_SECRET')
