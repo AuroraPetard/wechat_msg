@@ -1,37 +1,22 @@
-宝贝 今天是 {{date.DATA}} {{week.DATA}} {{lunar.DATA}}
-
+宝贝 
+今天是 {{date.DATA}} {{week.DATA}} {{lunar.DATA}}
 {{city.DATA}}市的天气状况如下哦
-
 天气：{{weather.DATA}}
-
 当前温度：{{temperature.DATA}}
-
 最低温：{{lowest.DATA}}  最高温：{{highest.DATA}}
-
 穿衣指数：{{clothers.DATA}}
-
 紫外线强度：{{UVI.DATA}}
-
 护肤指数：{{skinCare.DATA}}
-
 感冒指数：{{cold.DATA}}
-
 晾晒指数：{{dry.DATA}}
-
 户外指数：{{outdoor.DATA}}
-
 污染指数：{{pollution.DATA}}
-
 中暑指数：{{sunstroke.DATA}}
-
 舒适度：{{comfort.DATA}}
-
-宝贝我们明天这么吃好嘛😊 素菜{{vege.DATA}} 荤菜{{meat.DATA}} 主食{{mainFood.DATA}} 汤{{soup.DATA}}
-
+宝贝我们明天这么吃好嘛😊 
+素菜{{vege.DATA}} 荤菜{{meat.DATA}} 主食{{mainFood.DATA}} 汤{{soup.DATA}}
 宝贝 我们已经相恋 {{love_days.DATA}} 天啦 每天都好爱你呀😘😘😘
-
 距离你的生日还有：{{birthday_left.DATA}} 天哦
-
 {{words.DATA}}
 
 
