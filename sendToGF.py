@@ -198,15 +198,15 @@ data = {
         "color": get_random_color()
     },
     "UVI": {
-        "value": moreInfo[1][1],
+        "value": moreInfo[1][0],
         "color": get_random_color()
     },
     "skinCare": {
-        "value": moreInfo[2][1],
+        "value": moreInfo[2][0],
         "color": get_random_color()
     },
     "cold": {
-        "value": moreInfo[4][1],
+        "value": moreInfo[4][0],
         "color": get_random_color()
     },
     "dry": {
