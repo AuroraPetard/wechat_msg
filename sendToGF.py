@@ -71,6 +71,7 @@ def get_more_weatherInfo():
         zhishus = data.getElementsByTagName('zhishu')
         resultList = []
         for zs in zhishus:
+            value = zs.getElementsByTagName('value')[0].childNodes[0].nodeValue
             detail = zs.getElementsByTagName('detail')[0].childNodes[0].nodeValue
             resultList.append([value,detail])
         return resultList
