@@ -211,47 +211,47 @@ data = {
         "color": get_random_color()
     },
     "outdoor": {
-        "value": moreInfo[6],
+        "value": weather['weather'],
         "color": get_random_color()
     },
     "pollution": {
-        "value": moreInfo[6],
+        "value": weather['weather'],
         "color": get_random_color()
     },
     "sunstroke": {
-        "value": moreInfo[6],
+        "value": weather['weather'],
         "color": get_random_color()
     },
     "comfort": {
-        "value": moreInfo[6],
+        "value": weather['weather'],
         "color": get_random_color()
     },
     "vega": {
-        "value": moreInfo[6],
+        "value": weather['weather'],
         "color": get_random_color()
     },
     "meat": {
-        "value": moreInfo[6],
+        "value": weather['weather'],
         "color": get_random_color()
     },
     "mainFood": {
-        "value": moreInfo[6],
+        "value": weather['weather'],
         "color": get_random_color()
     },
     "soup": {
-        "value": moreInfo[6],
+        "value": weather['weather'],
         "color": get_random_color()
     },
     "love_days": {
-        "value": moreInfo[6],
+        "value": weather['weather'],
         "color": get_random_color()
     },
     "birthday_left": {
-        "value": moreInfo[6],
+        "value": weather['weather'],
         "color": get_random_color()
     },
     "words": {
-        "value": moreInfo[6],
+        "value": weather['weather'],
         "color": get_random_color()
     },
 }
