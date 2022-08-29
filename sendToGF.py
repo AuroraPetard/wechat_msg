@@ -157,6 +157,8 @@ if moreInfo is None:
 
 foods = get_foods()
 
+
+
 data = {
     "city": {
         "value": city,
@@ -226,7 +228,7 @@ data = {
         "value": weather['weather'],
         "color": get_random_color()
     },
-    "vega": {
+    "vege": {
         "value": weather['weather'],
         "color": get_random_color()
     },

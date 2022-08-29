@@ -13,9 +13,9 @@
 污染指数：{{pollution.DATA}}
 中暑指数：{{sunstroke.DATA}}
 舒适度：{{comfort.DATA}}
-宝贝我们明天这么吃好嘛😊 
-素菜{{vege.DATA}} 荤菜{{meat.DATA}} 主食{{mainFood.DATA}} 汤{{soup.DATA}}
-宝贝 我们已经相恋 {{love_days.DATA}} 天啦 每天都好爱你呀😘😘😘
+宝贝我们明天这么吃好嘛
+素菜：{{vege.DATA}} 荤菜：{{meat.DATA}} 主食：{{mainFood.DATA}} 汤：{{soup.DATA}}
+宝贝 我们已经相恋 {{love_days.DATA}} 天啦 每天都好爱你呀
 距离你的生日还有：{{birthday_left.DATA}} 天哦
 {{words.DATA}}
 
