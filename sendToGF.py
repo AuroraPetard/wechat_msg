@@ -6,6 +6,8 @@ import requests
 import os
 import random
 from xml.dom.minidom import parseString
+from zhdate import ZhDate
+
 
 
 city = os.getenv('CITY_GF')
