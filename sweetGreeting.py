@@ -1,15 +1,24 @@
 from datetime import date, datetime, timedelta
-import math
 from wechatpy import WeChatClient, WeChatClientException
 from wechatpy.client.api import WeChatMessage
 import requests
 import os
 import random
-from xml.dom.minidom import parseString
-from zhdate import ZhDate
+import time
 
 user_ids = os.getenv('USER_ID_GF').split(' ')
-template_id = os.getenv('TEMPLATE_ID_GF')
+templateArr = os.getenv('TEMPLATE_ID_SG').split(' ')
+
+
+t=time.localtime()
+
+hour=t.tm_hour
+
+if hour=='5':
+	template_id=templateArr[0]
+else:
+	template_id=templateArr[1]
+
 
 
 app_id = os.getenv('APP_ID')
