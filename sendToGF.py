@@ -163,19 +163,15 @@ foods = get_foods()
 data = {
     "city": {
         "value": city,
-        "color": get_random_color()
     },
     "date": {
         "value": today.strftime('%Y年%m月%d日'),
-        "color": get_random_color()
     },
     "week": {
         "value": get_week(weather['date']),
-        "color": get_random_color()
     },
     "lunar": {
         "value": get_lunar(weather['date']),
-        "color": get_random_color()
     },
     "weather": {
         "value": weather['weather'],
