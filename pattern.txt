@@ -1,14 +1,18 @@
-宝贝 
 今天是 {{date.DATA}} {{week.DATA}} {{lunar.DATA}}
 {{city.DATA}}市的天气状况如下哦
-天气：{{weather.DATA}}
-当前温度：{{temperature.DATA}}
+今天天气：{{weather.DATA}}
+现在温度：{{temperature.DATA}}
 最低温：{{lowest.DATA}}  最高温：{{highest.DATA}}
-穿衣指数：{{clothers.DATA}}
-紫外线强度：{{UVI.DATA}}
-护肤指数：{{skinCare.DATA}}
-感冒指数：{{cold.DATA}}
-晾晒指数：{{dry.DATA}}
+穿衣指数
+{{clothers.DATA}}
+紫外线强度
+{{UVI.DATA}}
+护肤指数
+{{skinCare.DATA}}
+感冒指数
+{{cold.DATA}}
+晾晒指数
+{{dry.DATA}}
 户外指数：{{outdoor.DATA}}
 污染指数：{{pollution.DATA}}
 中暑指数：{{sunstroke.DATA}}

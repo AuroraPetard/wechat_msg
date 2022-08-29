@@ -72,7 +72,7 @@ def get_more_weatherInfo():
         resultList = []
         for zs in zhishus:
             detail = zs.getElementsByTagName('detail')[0].childNodes[0].nodeValue
-            resultList.append(detail)
+            resultList.append([value,detail])
         return resultList
 
 
@@ -193,67 +193,67 @@ data = {
         "color": get_random_color()
     },
     "clothers": {
-        "value": moreInfo[0],
+        "value": moreInfo[0][1],
         "color": get_random_color()
     },
     "UVI": {
-        "value": moreInfo[1],
+        "value": moreInfo[1][1],
         "color": get_random_color()
     },
     "skinCare": {
-        "value": moreInfo[2],
+        "value": moreInfo[2][1],
         "color": get_random_color()
     },
     "cold": {
-        "value": moreInfo[4],
+        "value": moreInfo[4][1],
         "color": get_random_color()
     },
     "dry": {
-        "value": moreInfo[5],
+        "value": moreInfo[5][0],
         "color": get_random_color()
     },
     "outdoor": {
-        "value": weather['weather'],
+        "value": moreInfo[6][0],
         "color": get_random_color()
     },
     "pollution": {
-        "value": weather['weather'],
+        "value": moreInfo[7][0],
         "color": get_random_color()
     },
     "sunstroke": {
-        "value": weather['weather'],
+        "value": moreInfo[9][0],
         "color": get_random_color()
     },
     "comfort": {
-        "value": weather['weather'],
+        "value": moreInfo[10][0],
         "color": get_random_color()
     },
     "vege": {
-        "value": weather['weather'],
+        "value": foods[0],
         "color": get_random_color()
     },
     "meat": {
-        "value": weather['weather'],
+        "value": foods[1],
         "color": get_random_color()
     },
     "mainFood": {
-        "value": weather['weather'],
+        "value": foods[2],
         "color": get_random_color()
     },
     "soup": {
-        "value": weather['weather'],
+        "value": foods[3],
         "color": get_random_color()
     },
     "love_days": {
-        "value": weather['weather'],
+        "value": get_memorial_days_count(),
         "color": get_random_color()
     },
     "birthday_left": {
-        "value": weather['weather'],
+        "value": get_birthday_left(),
         "color": get_random_color()
     },
     "words": {
-        "value": weather['weather'],
+        "value": get_words(),
         "color": get_random_color()
     },
 }
