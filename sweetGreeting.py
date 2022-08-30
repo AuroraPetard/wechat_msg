@@ -14,7 +14,7 @@ t=time.localtime()
 
 hour=t.tm_hour
 
-if hour=='5':
+if hour <= 10 :
 	template_id=templateArr[0]
 else:
 	template_id=templateArr[1]
