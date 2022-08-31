@@ -1,7 +1,7 @@
 name: sweetGreeting
 on:
   schedule:
-  - cron:  '30 5,14 * * *'
+  - cron:  '30 4,5,14 * * *'
   workflow_dispatch:
 
 jobs:
