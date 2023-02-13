@@ -1,13 +1,13 @@
 name: weather
 on:
   schedule:
-  - cron:  '30 11 * * *'
+  - cron:  '25 11 * * *'
   workflow_dispatch:
 
 jobs:
   send_message:
     runs-on: ubuntu-latest
-    name: send morning to your girlfriend
+    name: send weather forecast
 
     steps:
     - name: checkout
