@@ -5,7 +5,7 @@ import random
 from zhdate import ZhDate
 from datetime import datetime
 from wechatpy import WeChatClient, WeChatClientException
-from wechatpy.client.api import WeChatMessage
+from wechatpy.client.api import WeChatMessage, WeChatTemplate
 
 citys = os.getenv('CITY_WF').split(' ')
 user_ids = os.getenv('USER_ID_WF').split(' ')
@@ -88,125 +88,38 @@ if __name__ == '__main__':
         d3 = weatherAll['data']['forecast'][3]
 
         data = {
-            "d1c": {
-                "value": weatherAll['cityInfo']['city'],
-
-            },
-            "d1d": {
-                "value": d1['ymd'],
-
-            },
-            "d1w": {
-                "value": d1['week'],
-
-            },
-            "d1l": {
-                "value": get_lunar(d1['ymd']),
-
-            },
-            "d1wa": {
-                "value": d1['type'],
-
-            },
-            "d1lo": {
-                "value": d1['low'],
-
-            },
-            "d1h": {
-                "value": d1['high'],
-
-            },
-            "d1wi": {
-                "value": d1['fx'],
-
-            },
-            "d1wl": {
-                "value": d1['fl'],
-
-            },
-            "d1wo": {
-                "value": get_words(),
-                "color": get_random_color()
-            },
-            "d2c": {
-                "value": weatherAll['cityInfo']['city'],
-            },
-            "d2d": {
-                "value": d2['ymd'],
-
-            },
-            "d2w": {
-                "value": d2['week'],
-
-            },
-            "d2l": {
-                "value": get_lunar(d2['ymd']),
-
-            },
-            "d2wa": {
-                "value": d2['type'],
-
-            },
-            "d2lo": {
-                "value": d2['low'],
-
-            },
-            "d2h": {
-                "value": d2['high'],
-
-            },
-            "d2wi": {
-                "value": d2['fx'],
-
-            },
-            "d2wl": {
-                "value": d2['fl'],
-
-            },
-            "d2wo": {
-                "value": get_words(),
-                "color": get_random_color()
-            },
-            "d3c": {
-                "value": weatherAll['cityInfo']['city'],
-            },
-            "d3d": {
-                "value": d3['ymd'],
-
-            },
-            "d3w": {
-                "value": d3['week'],
-
-            },
-            "d3l": {
-                "value": get_lunar(d3['ymd']),
-
-            },
-            "d3wa": {
-                "value": d3['type'],
-
-            },
-            "d3lo": {
-                "value": d3['low'],
-
-            },
-            "d3h": {
-                "value": d3['high'],
-
-            },
-            "d3wi": {
-                "value": d3['fx'],
-
-            },
-            "d3wl": {
-                "value": d3['fl'],
-
-            },
-            "d3wo": {
-                "value": get_words(),
-                "color": get_random_color()
-            },
+            "d1c": {"value": weatherAll['cityInfo']['city']},
+            "d1d": {"value": d1['ymd']},
+            "d1w": {"value": d1['week']},
+            "d1l": {"value": get_lunar(d1['ymd'])},
+            "d1wa": {"value": d1['type']},
+            "d1lo": {"value": d1['low']},
+            "d1h": {"value": d1['high']},
+            "d1wi": {"value": d1['fx']},
+            "d1wl": {"value": d1['fl']},
+            "d1wo": {"value": get_words(), "color": get_random_color()},
+            "d2c": {"value": weatherAll['cityInfo']['city'], },
+            "d2d": {"value": d2['ymd']},
+            "d2w": {"value": d2['week']},
+            "d2l": {"value": get_lunar(d2['ymd']), },
+            "d2wa": {"value": d2['type'], },
+            "d2lo": {"value": d2['low'], },
+            "d2h": {"value": d2['high'], },
+            "d2wi": {"value": d2['fx'], },
+            "d2wl": {"value": d2['fl'], },
+            "d2wo": {"value": get_words(), "color": get_random_color()},
+            "d3c": {"value": weatherAll['cityInfo']['city']},
+            "d3d": {"value": d3['ymd']},
+            "d3w": {"value": d3['week']},
+            "d3l": {"value": get_lunar(d3['ymd'])},
+            "d3wa": {"value": d3['type']},
+            "d3lo": {"value": d3['low']},
+            "d3h": {"value": d3['high']},
+            "d3wi": {"value": d3['fx']},
+            "d3wl": {"value": d3['fl']},
+            "d3wo": {"value": get_words(), "color": get_random_color()}
         }
+
         try:
             for user_id in user_ids:
                 res = wm.send_template(user_id, template_id, data)
