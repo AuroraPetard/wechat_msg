@@ -1,0 +1,30 @@
+name: beginDay
+on:
+  schedule:
+  - cron:  '22 11 * * *'
+  workflow_dispatch:
+
+jobs:
+  send_message:
+    runs-on: ubuntu-latest
+    name: send weather forecast
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3
+      with:
+        ref: master
+
+    - name: sender
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+    - run: pip install -r ./requirements.txt && python ./beginDay.py.py
+
+    env:
+      APP_ID: ${{ secrets.APP_ID }}
+      APP_SECRET: ${{ secrets.APP_SECRET }}
+      TEMPLATE_ID_G1: ${{ secrets.TEMPLATE_ID_G1 }}
+      USER_ID_G1: ${{ secrets.USER_ID_G1 }}
+      CITY_G1: ${{ secrets.CITY_G1 }}
