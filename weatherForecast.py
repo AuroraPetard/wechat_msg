@@ -114,7 +114,7 @@ if __name__ == '__main__':
             "day3h": {"value": day3['high']},
             "day3wi": {"value": day3['fx']},
             "day3wl": {"value": day3['fl']},
-            "day3wo": {"value": get_words(),"color": #DC143C}
+            "day3wo": {"value": get_words(),"color": get_random_color()}
         }
 
         try:
