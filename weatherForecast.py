@@ -58,6 +58,12 @@ def get_lunar(dateTime):
 def get_random_color():
     return "#%06x" % random.randint(0, 0xFFFFFF)
 
+def get_color():
+    # 获取随机颜色
+    get_colors = lambda n: list(map(lambda i: "#" + "%06x" % random.randint(0, 0xFFFFFF), range(n)))
+    color_list = get_colors(100)
+    return random.choice(color_list)
+
 
 dontSmoke = ["吸烟易生肝肺癌 ! ! !", "吸烟==劳命伤财 ! ! !", "离香烟越近，离健康越远 ! ! !", "吸的是烟还是命 ! ! !", "祝君舍瘾把烟戒，利众益己莫迟延 ! ! !",
              "为了爱你和你爱的人，请不要吸烟 ! ! !", "现在吞云吐雾，以后病痛缠身 ! ! !", "小小一支烟，危害万万千 ! ! !", "无烟世界，清新一片 ! ! !",
@@ -96,7 +102,7 @@ if __name__ == '__main__':
             "day1h": {"value": day1['high']},
             "day1wi": {"value": day1['fx']},
             "day1wl": {"value": day1['fl']},
-            "day1wo": {"value": get_words(),"color": get_random_color()},
+            "day1wo": {"value": get_words(),"color": get_color()},
             "day2d": {"value": day2['ymd']},
             "day2w": {"value": day2['week']},
             "day2l": {"value": get_lunar(day2['ymd'])},
@@ -105,7 +111,7 @@ if __name__ == '__main__':
             "day2h": {"value": day2['high']},
             "day2wi": {"value": day2['fx']},
             "day2wl": {"value": day2['fl']},
-            "day2wo": {"value": get_words(),"color": get_random_color()},
+            "day2wo": {"value": get_words(),"color": get_color()},
             "day3d": {"value": day3['ymd']},
             "day3w": {"value": day3['week']},
             "day3l": {"value": get_lunar(day3['ymd'])},
@@ -114,7 +120,7 @@ if __name__ == '__main__':
             "day3h": {"value": day3['high']},
             "day3wi": {"value": day3['fx']},
             "day3wl": {"value": day3['fl']},
-            "day3wo": {"value": get_words(),"color": get_random_color()}
+            "day3wo": {"value": get_words(),"color": get_color()}
         }
 
         try:
