@@ -86,9 +86,10 @@ if __name__ == '__main__':
         day1 = weatherAll['data']['forecast'][1]
         day2 = weatherAll['data']['forecast'][2]
         day3 = weatherAll['data']['forecast'][3]
+        city = weatherAll['cityInfo']['city']
 
         data = {
-            "day1c": {"value": weatherAll['cityInfo']['city']},
+            "day1c": {"value": city},
             "day1d": {"value": day1['ymd']},
             "day1w": {"value": day1['week']},
             "day1l": {"value": get_lunar(day1['ymd'])},
