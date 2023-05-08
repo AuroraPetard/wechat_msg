@@ -1,4 +1,4 @@
-name: weather
+name: g1
 on:
   schedule:
   - cron:  '22 11 * * *'
