@@ -8,7 +8,7 @@ from wechatpy import WeChatClient, WeChatClientException
 from wechatpy.client.api import WeChatMessage, WeChatTemplate
 
 user_ids = os.getenv('USER_ID_G1').split(' ')
-template_id = os.getenv('TEMPLATE_ID_G1')
+template_id = os.getenv('DAY_TEMPLATE_ID')
 
 app_id = os.getenv('APP_ID')
 app_secret = os.getenv('APP_SECRET')
