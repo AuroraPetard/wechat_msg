@@ -31,12 +31,10 @@ def get_weather(city):
     if city is None:
         print('请设置城市')
         return None
-    # url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
     url = "http://t.weather.sojson.com/api/weather/city/" + city
     res = requests.get(url).json()
     if res is None:
-        return None
-    # weather = res['data']['list']
+        return get_weather(city);
     return res
 
 
