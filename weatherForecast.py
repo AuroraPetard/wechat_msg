@@ -87,8 +87,7 @@ if __name__ == '__main__':
         city = weatherAll['cityInfo']['city']
 
         data = {
-            "day1c": {"value": city},
-
+            "city": {"value": city},
             "day1d": {"value": day1['ymd']},
             "day1w": {"value": day1['week']},
             "day1l": {"value": get_lunar(day1['ymd'])},
@@ -97,18 +96,16 @@ if __name__ == '__main__':
             "day1h": {"value": day1['high']},
             "day1wi": {"value": day1['fx']},
             "day1wl": {"value": day1['fl']},
-            "day1wo": {"value": get_words(), "color": get_random_color()},
-
+            "day1wo": {"value": get_words()},
             "day2d": {"value": day2['ymd']},
             "day2w": {"value": day2['week']},
             "day2l": {"value": get_lunar(day2['ymd'])},
             "day2wa": {"value": day2['type']},
-            "day2lo": {"value": day2['low'], },
-            "day2h": {"value": day2['high'], },
-            "day2wi": {"value": day2['fx'], },
-            "day2wl": {"value": day2['fl'], },
-            "day2wo": {"value": get_words(), "color": get_random_color()},
-
+            "day2lo": {"value": day2['low']},
+            "day2h": {"value": day2['high']},
+            "day2wi": {"value": day2['fx']},
+            "day2wl": {"value": day2['fl']},
+            "day2wo": {"value": get_words()},
             "day3d": {"value": day3['ymd']},
             "day3w": {"value": day3['week']},
             "day3l": {"value": get_lunar(day3['ymd'])},
@@ -117,7 +114,7 @@ if __name__ == '__main__':
             "day3h": {"value": day3['high']},
             "day3wi": {"value": day3['fx']},
             "day3wl": {"value": day3['fl']},
-            "day3wo": {"value": get_words(), "color": get_random_color()}
+            "day3wo": {"value": get_words()}
         }
 
         try:
