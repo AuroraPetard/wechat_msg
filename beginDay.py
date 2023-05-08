@@ -7,7 +7,6 @@ from datetime import datetime
 from wechatpy import WeChatClient, WeChatClientException
 from wechatpy.client.api import WeChatMessage, WeChatTemplate
 
-citys = os.getenv('CITY_G1').split(' ')
 user_ids = os.getenv('USER_ID_G1').split(' ')
 template_id = os.getenv('TEMPLATE_ID_G1')
 
